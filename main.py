@@ -17,11 +17,12 @@ print(index2)
 mean = df_ko["Close"].mean()
 
 plt.figure('Coca Cola Stock vs Pepsi Stock')
-plt.plot(df_ko['Date'],df_ko['Close'], linewidth=0.8, color = 'r')
-plt.plot(df_pep['Date'],df_pep['Close'])
+plt.plot(df_ko['Date'],df_ko['Close'], linewidth=0.8, color = 'r', label = 'Coca Cola Stock')
+plt.plot(df_pep['Date'],df_pep['Close'], linewidth=0.8, color = 'b',label = 'Pepsi Stock' )
 
 plt.xlabel('Dates')
 plt.ylabel('Stock Price')
+plt.legend()
 
 
 plt.show()
